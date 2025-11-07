@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "仙宫云抢卡助手",
+  "version": "1.0.0",
+  "description": "Automatically retry /api/instance/create requests until success",
+  "permissions": [
+    "webRequest",
+    "storage",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "仙宫云抢卡助手"
+  }
+}

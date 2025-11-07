@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>仙宫云抢卡助手</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>仙宫云抢卡助手</h1>
+
+    <div id="status" class="status">
+      <p id="statusText">等待检测请求...</p>
+    </div>
+
+    <div id="requestInfo" class="request-info hidden">
+      <h3>检测到的请求:</h3>
+      <div class="info-item">
+        <strong>GPU:</strong>
+        <span id="gpuModel">-</span>
+      </div>
+      <div class="info-item">
+        <strong>时间:</strong>
+        <span id="requestTime">-</span>
+      </div>
+    </div>
+
+    <div id="retryInfo" class="retry-info hidden">
+      <div class="info-item">
+        <strong>抢卡次数:</strong>
+        <span id="attemptCount">0</span>
+      </div>
+      <div class="info-item">
+        <strong>最新结果:</strong>
+        <span id="lastResponse">-</span>
+      </div>
+    </div>
+
+    <div class="button-group">
+      <button id="startBtn" class="btn btn-primary" disabled>开始抢卡</button>
+      <button id="stopBtn" class="btn btn-danger hidden">停止</button>
+    </div>
+
+    <div id="successMessage" class="success-message hidden">
+      <p>✓ 请求成功！</p>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
